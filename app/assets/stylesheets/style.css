@@ -1,0 +1,206 @@
+body {
+    overflow-x: hidden;
+}
+header{
+    transform: rotate(-7deg);
+}
+#logo{
+   text-decoration:none;
+   color:white;
+   font-size:30px;
+   position: absolute;
+   left:30%;
+   top:20px;
+}
+
+.banner-container{
+    z-index: -1;
+    position: absolute;
+    left:-3%;
+    top:-80px;
+    width:130%;
+    height:800px;
+    transform: rotate(7deg);
+    background: #8360c3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+.about-container{
+    z-index: -1;
+    position: absolute;
+    left:-4%;
+    top:724px;
+    width:130%;
+    height:800px;
+    transform: rotate(12deg);
+}
+
+.about-container > h1::first-letter{
+    font-size: 2em;
+    margin-right:2px;
+}
+
+.about-container > h1 {
+    transform: rotate(-7deg);
+    position: relative;
+    left:34.7%;
+    top:-30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.nav-title-wrapper{
+  position: absolute;
+  font-family: 'Courier New', Courier, monospace;
+  width:30%;
+  left:0%;
+  height:100px;
+  top:130px;   
+}
+
+.nav-menu-wrapper{
+  position: absolute;
+  width:70%;
+  left:31%;
+  height:100px;
+  top:130px;  
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+   display: inline;
+   position: relative;
+   top:17px; 
+   margin-right:20px;
+}
+
+ul li a {
+   text-decoration:none;
+   color:white;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
+}
+
+.pic-wrapper{
+ width:30%;
+ height:auto;   
+}
+
+#pic{
+ filter: grayscale(30);
+ width:15%;
+ position: absolute;
+ top:300px;
+ left:10%;
+ transform: rotate(-7deg);
+ border-radius: 150px;
+  -webkit-animation: picture-animation 2s;
+  -moz-animation: picture-animation 2s;
+  -o-animation: picture-animation 2s;
+}
+
+.information-container{
+  position: absolute;
+  width:40%;
+  height:500px;
+  left:30%;
+  top:200px;
+  transform: rotate(-7deg);
+  box-shadow: 5px 5px silver;
+  border:1px solid gray;
+}
+
+div[class="information-container"]{
+    -webkit-animation: information-animation 2s;
+    -moz-animation: information-animation 2s;
+    -o-animation: information-animation 2s;   
+}
+
+div[class="fullname-wrapper"]{
+  position: absolute;
+  width:50%;
+}
+div[class="age-wrapper"]{
+    position: absolute;
+    width:50%;
+    left:53%;
+  }
+
+#fullname, 
+#age{
+  font-family: font-family: 'Courier New', Courier, monospace;  
+}  
+
+@-webkit-keyframes picture-animation {
+    0% {
+        top: 300px; 
+        left:1%;
+        width:30px; 
+        transform: rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes information-animation {
+    0% {
+        top: 300px; 
+        left:100%;
+        width:30px; 
+        transform: rotate(-360deg);
+    }
+}
+
+/* Media Query */
+
+@media screen and (max-width:1110px){
+ .banner-container{
+    z-index: -1;
+    position: absolute;
+    left:-3%;
+    top:-80px;
+    width:130%;
+    height:600px;
+    transform: rotate(7deg);
+    background: #8360c3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+ }   
+
+ .about-container{
+    z-index: -1;
+    position: absolute;
+    left:-4%;
+    top:500px;
+    width:130%;
+    height:800px;
+    transform: rotate(12deg);
+}
+
+.information-container{
+    position: absolute;
+    width:40%;
+    height:250px;
+    left:30%;
+    top:150px;
+    transform: rotate(-7deg);
+    box-shadow: 5px 5px silver;
+    border:1px solid gray;
+  }
+
+#pic{
+    filter: grayscale(30);
+     width:15%;
+     position: absolute;
+     top:200px;
+     left:10%;
+     transform: rotate(-7deg);
+     border-radius: 150px;
+     -webkit-animation: picture-animation 2s;
+     -moz-animation: picture-animation 2s;
+     -o-animation: picture-animation 2s;
+}
+ 
+
+}
